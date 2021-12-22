@@ -12,21 +12,12 @@ public class RegrasDeDesconto
 
         System.out.println("Valor Mini Livro: " + mLivro.getValor());
 
-        if (!mLivro.aplicaDescontoDe(0.3))
-        {
-            System.out.println("Desconto não pode ser maior que 30%");
-        }
-        else
-        {
-            System.out.println("Valor do Mini livro com desconto: " + mLivro.getValor());
-        }
-
         Livro livro = new LivroFisico(autor);
         livro.setValor(59.90);
 
         System.out.println("Valor Atual: "+ livro.getValor());
 
-        if (!livro.aplicaDescontoDe(0.3))
+        if (!((LivroFisico) livro).aplicaDescontoDe(0.3))
         {
             System.out.println("Desconto não pode ser maior que 30%");
         }

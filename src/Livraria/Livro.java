@@ -1,6 +1,6 @@
 package Livraria;
 
-public abstract class Livro
+public abstract class Livro implements Produto
 {
     private String nome;
     private String descricao;
@@ -26,10 +26,6 @@ public abstract class Livro
         this.isbn = "000-00-00000-00-0";
     }
 
-    public boolean aplicaDescontoDe(double porcentagem)
-    {
-        return false;
-    }
 
     boolean temAutor()
     {
@@ -41,7 +37,7 @@ public abstract class Livro
         this.valor = valor;
     }
 
-    double getValor()
+    public double getValor()
     {
         return this.valor;
     }
