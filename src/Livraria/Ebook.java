@@ -13,7 +13,6 @@ public class Ebook extends Livro
 
     }
 
-
     @Override
     public boolean aplicaDescontoDe(double porcentagem)
     {
